@@ -20,6 +20,7 @@ import com.thirtydegreesray.openhub.mvp.model.BasicToken;
 import com.thirtydegreesray.openhub.mvp.presenter.LoginPresenter;
 import com.thirtydegreesray.openhub.ui.activity.base.BaseActivity;
 import com.thirtydegreesray.openhub.util.AppOpener;
+import com.thirtydegreesray.openhub.util.PrefUtils;
 import com.thirtydegreesray.openhub.util.StringUtils;
 import com.thirtydegreesray.openhub.util.ViewUtils;
 import com.unstoppable.submitbuttonview.SubmitButton;
@@ -77,6 +78,11 @@ public class LoginActivity extends BaseActivity<LoginPresenter>
 
     @Override
     public void onLoginComplete() {
+        if (!password.isEmpty() && !userName.isEmpty()){
+            PrefUtils.set("username",userName);
+            PrefUtils.set("pw",password);
+        }
+
         delayFinish();
         startActivity(new Intent(getActivity(), MainActivity.class));
     }
@@ -133,6 +139,10 @@ public class LoginActivity extends BaseActivity<LoginPresenter>
                 return false;
             }
         });
+       String name =  PrefUtils.getDefaultSp().getString("username","");
+        String pw =   PrefUtils.getDefaultSp().getString("pw","");
+        passwordEt.setText(pw);
+        userNameEt.setText(name);
 
     }
 
