@@ -14,10 +14,10 @@ import com.danielstone.materialaboutlibrary.items.MaterialAboutItemOnClickAction
 import com.danielstone.materialaboutlibrary.items.MaterialAboutTitleItem;
 import com.danielstone.materialaboutlibrary.model.MaterialAboutCard;
 import com.danielstone.materialaboutlibrary.model.MaterialAboutList;
-import com.tencent.bugly.beta.Beta;
+//import com.tencent.bugly.beta.Beta;
 import com.thirtydegreesray.openhub.BuildConfig;
 import com.thirtydegreesray.openhub.R;
-import com.thirtydegreesray.openhub.ui.widget.UpgradeDialog;
+//import com.thirtydegreesray.openhub.ui.widget.UpgradeDialog;
 import com.thirtydegreesray.openhub.util.AppOpener;
 import com.thirtydegreesray.openhub.util.AppUtils;
 import com.thirtydegreesray.openhub.util.ThemeHelper;
@@ -40,7 +40,7 @@ public class AboutActivity extends MaterialAboutActivity {
         isAlive = true;
         ThemeHelper.applyForAboutActivity(this);
         super.onCreate(savedInstanceState);
-        UpgradeDialog.INSTANCE.setShowDialogActivity(this);
+//        UpgradeDialog.INSTANCE.setShowDialogActivity(this);
     }
 
     @NonNull
@@ -71,12 +71,12 @@ public class AboutActivity extends MaterialAboutActivity {
                 .text(R.string.version)
                 .subText(BuildConfig.VERSION_NAME)
                 .icon(R.drawable.ic_menu_about)
-                .setOnClickAction(new MaterialAboutItemOnClickAction() {
-                    @Override
-                    public void onClick() {
-                        Beta.checkUpgrade(true, true);
-                    }
-                })
+//                .setOnClickAction(new MaterialAboutItemOnClickAction() {
+//                    @Override
+//                    public void onClick() {
+//                        Beta.checkUpgrade(true, true);
+//                    }
+//                })
                 .build());
         appBuilder.addItem(new MaterialAboutActionItem.Builder()
                 .text(R.string.source_code)
@@ -173,7 +173,7 @@ public class AboutActivity extends MaterialAboutActivity {
     @Override
     protected void onDestroy() {
         isAlive = false;
-        UpgradeDialog.INSTANCE.setShowDialogActivity(null);
+//        UpgradeDialog.INSTANCE.setShowDialogActivity(null);
         super.onDestroy();
     }
 

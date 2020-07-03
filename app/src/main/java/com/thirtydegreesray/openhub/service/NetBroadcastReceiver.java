@@ -20,13 +20,13 @@ public class NetBroadcastReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, @NonNull Intent intent) {
-        String action = intent.getAction();
-        if (ConnectivityManager.CONNECTIVITY_ACTION.equals(action)) {
-            int preNetStatus = NetHelper.INSTANCE.getNetStatus();
-            NetHelper.INSTANCE.checkNet();
-            int curNetStatus = NetHelper.INSTANCE.getNetStatus();
-            AppEventBus.INSTANCE.getEventBus().post(new Event.NetChangedEvent(preNetStatus, curNetStatus));
-        }
+//        String action = intent.getAction();
+//        if (ConnectivityManager.CONNECTIVITY_ACTION.equals(action)) {
+//            int preNetStatus = NetHelper.INSTANCE.getNetStatus();
+//            NetHelper.INSTANCE.checkNet();
+//            int curNetStatus = NetHelper.INSTANCE.getNetStatus();
+//            AppEventBus.INSTANCE.getEventBus().post(new Event.NetChangedEvent(preNetStatus, curNetStatus));
+//        }
     }
 
 }

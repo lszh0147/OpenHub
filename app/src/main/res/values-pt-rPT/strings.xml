@@ -1,6 +1,6 @@
 <resources>
     <!-- onLoginClick -->
-    <string name="app_name">OpenHub</string>
+    <string name="app_name">GitHub</string>
     <string name="user_name">Utilizador</string>
     <string name="password">Palavra-passe</string>
     <string name="login">Iniciar sessão</string>

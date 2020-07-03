@@ -19,7 +19,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.tencent.bugly.crashreport.CrashReport;
+//import com.tencent.bugly.crashreport.CrashReport;
 import com.thirtydegreesray.dataautoaccess.annotation.AutoAccess;
 import com.thirtydegreesray.openhub.AppData;
 import com.thirtydegreesray.openhub.R;
@@ -114,8 +114,8 @@ public class MainActivity extends BaseDrawerActivity<MainPresenter>
     protected void initActivity() {
         super.initActivity();
         if (AppData.INSTANCE.getLoggedUser() != null)
-            CrashReport.putUserData(getApplicationContext(),
-                    "GitHubId", AppData.INSTANCE.getLoggedUser().getLogin());
+//            CrashReport.putUserData(getApplicationContext(),
+//                    "GitHubId", AppData.INSTANCE.getLoggedUser().getLogin());
 
         setStartDrawerEnable(true);
         setEndDrawerEnable(true);
