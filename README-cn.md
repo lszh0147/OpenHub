@@ -11,10 +11,10 @@
 ## 特点
 
 ### App
-* 两种登录方式，(Basic Auth) 和 (OAuth)
+* 一种登录方式(OAuth)
 * 支持夜间模式和AMOLED Dark主题，多种主色调
 * 支持Markdown和代码高亮
-* 支持英文、简体中文、希伯来文、德文、印地文、葡萄牙文、韩文和西班牙文
+* 支持英文、简体中文、希伯来文、德文、印地文、葡萄牙文、韩文、西班牙文、繁体中文、俄罗斯文、波兰文, 格鲁吉亚文、意大利文、荷兰文、捷克文和葡萄牙文（巴西）
 * 支持离线模式
 * 支持所有语言的最热版本库查看
 * 支持多账户切换
@@ -111,6 +111,14 @@
 * [Aqueminivan](https://github.com/Aqueminivan) - 改进英文概述的翻译
 * [XF-zhjnc](https://github.com/XF-zhjnc) - 修复WIKI内部链接点击无效和版本库大小显示溢出等bug
 * [fergthh](https://github.com/fergthh) - 西班牙语翻译
+* [chiyi4488](https://github.com/chiyi4488) - 繁体中文翻译
+* [left4j](https://github.com/left4j) - 俄罗斯语翻译
+* [TheParanoik](https://github.com/TheParanoik) - 波兰语翻译
+* [X1nto](https://github.com/X1nto) - 格鲁吉亚语语翻译
+* [MerkeX](https://github.com/MerkeX) - 意大利语翻译
+* [Vistaus](https://github.com/Vistaus) - 荷兰语翻译
+* [pkubanek](https://github.com/pkubanek) - 捷克语翻译
+* [LouisUnnoficial](https://github.com/LouisUnnoficial) - 葡萄牙语(巴西)翻译
 
 ## License
 ThirtyDegreesRay:
