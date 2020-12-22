@@ -46,8 +46,8 @@ public class LoginActivity extends BaseActivity<LoginPresenter>
 //    @BindView(R.id.password_layout) TextInputLayout passwordLayout;
     @BindView(R.id.login_bn) SubmitButton loginBn;
 
-//    private String userName;
-//    private String password;
+    private String userName;
+    private String password;
 
     @Override
     protected void onNewIntent(Intent intent) {
@@ -140,10 +140,10 @@ public class LoginActivity extends BaseActivity<LoginPresenter>
 //            }
 //        });
 
-        String name =  PrefUtils.getDefaultSp().getString("username","");
-        String pw =   PrefUtils.getDefaultSp().getString("pw","");
-        passwordEt.setText(pw);
-        userNameEt.setText(name);
+//        String name =  PrefUtils.getDefaultSp().getString("username","");
+//        String pw =   PrefUtils.getDefaultSp().getString("pw","");
+//        passwordEt.setText(pw);
+//        userNameEt.setText(name);
     }
 
 
